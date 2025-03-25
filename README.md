@@ -90,11 +90,11 @@ git config --global user.email "seu@email.com"
 ### 1. Criar seu fork:
 Ao acessar a página principal do repositório da monitoria, você verá (no canto superior direito) um botão escrito fork.
 
-![Botão de Fork](assets/fork-ex.png)
+![Botão de Fork](assets/fork-ex.jpeg)
 
 Ao clicar nesse botão, crie o repositório:
 
-![Botão de criar Fork](image.png)
+![Botão de criar Fork](assets/fork-seta.jpeg)
 
 ---
 
