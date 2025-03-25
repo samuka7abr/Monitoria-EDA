@@ -44,6 +44,7 @@ Exercícios/
 └── A2/
 ```
 As entregas serão feitas a partir de forks e pull-requests aqui no github mesmo. Aqui vai um tutorial:
+
 ---
 
 ## ⚙️ Passo a Passo para Instalar e Configurar o Git
