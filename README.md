@@ -67,6 +67,13 @@ Se retornar algo como `git version 2.x.x`, está tudo certo.
 
 ### 3. Configurar o Git pela primeira vez:
 
+Para verificar se seu git já está configurado, rode o comando: 
+
+```bash
+git config --list
+```
+
+
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu@email.com"
