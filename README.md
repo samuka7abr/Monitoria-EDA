@@ -141,8 +141,8 @@ Esses commits e pushs mandarão suas alterações para o seu fork.
 
 1. Vá ao seu Fork no GitHub
 2. Clique em **"Contribute"** > **"Open Pull Request"**
-![Pull Request](assets/pr.png)
 3. Descreva brevemente o que foi resolvido e envie o Pull request.
+![Pull Request](assets/pr.png)
 
 🖼️ *[espaço para captura de tela: botão Pull Request]*  
 `assets/pull-request.png`
