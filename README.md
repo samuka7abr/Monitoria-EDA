@@ -144,9 +144,6 @@ Esses commits e pushs mandarão suas alterações para o seu fork.
 3. Descreva brevemente o que foi resolvido e envie o Pull request.
 ![Pull Request](assets/pr.png)
 
-🖼️ *[espaço para captura de tela: botão Pull Request]*  
-`assets/pull-request.png`
-
 Depois, avaliarei seu código e juntarei ao repisitório original.
 
 ---
