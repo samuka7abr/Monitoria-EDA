@@ -94,18 +94,27 @@ git clone https://github.com/samuka7abr/Monitoria-EDA.git
 cd Monitoria-EDA
 ```
 
-🖼️ *[espaço para captura de tela: clone do repositório]*  
-`assets/git-clone.png`
 
 ---
 
-### 2. Sincronizar com o repositório antes de fazer alterações:
+### 2. Criar seu fork:
+Ao acessar a página principal do repositório da monitoria, você verá (no canto superior direito) um botão escrito fork.
+
+![Botão de Fork](assets/fork-ex.png)
+
+Ao clicar nesse botão, crie o repositório:
+
+![Botão de criar Fork](image.png)
+
+---
+
+### 3. Sincronizar com o repositório antes de fazer alterações:
 
 ```bash
 git pull origin main
 ```
 
-### 3. Fazer alterações e subir para o GitHub:
+### 4. Fazer alterações e subir para o GitHub:
 
 ```bash
 git add .
@@ -118,7 +127,7 @@ git push origin main
 
 ---
 
-### 4. Abrir o Pull Request
+### 5. Abrir o Pull Request
 
 1. Vá ao repositório no GitHub
 2. Clique em **"Pull Requests"** > **"New Pull Request"**
