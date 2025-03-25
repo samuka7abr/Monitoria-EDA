@@ -105,14 +105,24 @@ git clone <link do seu fork>
 cd Monitoria-EDA (pode ser o nome do seu fork, mas sugiro não fazer alteração.)
 ```
 
+Depois, adicione o repositório principal ao seu remotamente:
+```bash
+git remote add upstream https://github.com/samuka7abr/Monitoria-EDA.git
+git remote -v
+```
+Você verá isso:
+
+![Exemplo remote](assets/ex.png)
 
 ---
 
 ### 3. Sincronizar com o repositório ANTES de fazer alterações:
 
-Esse comando servirá para que seu fork
+Esse comando servirá para que seu fork tenha os mesmos arquivos do original. (esse mesmo que você está)
 ```bash
-git pull origin main
+git pull upstream main
+//execute um comando separado do outro
+git push origin main
 ```
 
 ### 4. Fazer alterações e subir para o GitHub:
@@ -123,19 +133,21 @@ git commit -m "resolvendo atividade X"
 git push origin main
 ```
 
-🖼️ *[espaço para captura de tela: terminal com push]*  
-`assets/git-push.png`
+Esses commits e pushs mandarão suas alterações para o seu fork.
 
 ---
 
 ### 5. Abrir o Pull Request
 
-1. Vá ao repositório no GitHub
-2. Clique em **"Pull Requests"** > **"New Pull Request"**
-3. Descreva brevemente o que foi resolvido e envie
+1. Vá ao seu Fork no GitHub
+2. Clique em **"Contribute"** > **"Open Pull Request"**
+![Pull Request](assets/pr.png)
+3. Descreva brevemente o que foi resolvido e envie o Pull request.
 
 🖼️ *[espaço para captura de tela: botão Pull Request]*  
 `assets/pull-request.png`
+
+Depois, avaliarei seu código e juntarei ao repisitório original.
 
 ---
 
