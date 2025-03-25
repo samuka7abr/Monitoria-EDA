@@ -73,14 +73,15 @@ Para verificar se seu git já está configurado, rode o comando:
 git config --list
 ```
 
+Caso não esteja:
 
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu@email.com"
 ```
 
-🖼️ *[espaço para captura de tela: configuração do Git]*  
-`assets/git-config.png`
+![Exemplo de git já configurado](assets/git-config.png)
+
 
 ---
 
