@@ -4,7 +4,6 @@
 
 ////////////////////////////////////////////////////////////
 // estudo completo sobre funções em linguagem C
-// autor: monitoria de estrutura de dados (IDP)
 // este arquivo cobre: declaração, definição, chamada,
 // parâmetros por valor, por referência, retorno de ponteiros,
 // escopo, recursão e boas práticas
