@@ -185,4 +185,5 @@ Lá você poderá:
 
 Bons estudos e sucesso na disciplina!  
 Samuel Abrão
+
 **Monitoria de Estrutura de Dados – IDP**
