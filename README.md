@@ -87,17 +87,7 @@ git config --global user.email "seu@email.com"
 
 ## 🧭 Como Clonar o Repositório e Abrir um Pull Request
 
-### 1. Clonar o repositório:
-
-```bash
-git clone https://github.com/samuka7abr/Monitoria-EDA.git
-cd Monitoria-EDA
-```
-
-
----
-
-### 2. Criar seu fork:
+### 1. Criar seu fork:
 Ao acessar a página principal do repositório da monitoria, você verá (no canto superior direito) um botão escrito fork.
 
 ![Botão de Fork](assets/fork-ex.png)
@@ -108,8 +98,19 @@ Ao clicar nesse botão, crie o repositório:
 
 ---
 
-### 3. Sincronizar com o repositório antes de fazer alterações:
+### 2. Clonar o repositório:
 
+```bash
+git clone <link do seu fork>
+cd Monitoria-EDA (pode ser o nome do seu fork, mas sugiro não fazer alteração.)
+```
+
+
+---
+
+### 3. Sincronizar com o repositório ANTES de fazer alterações:
+
+Esse comando servirá para que seu fork
 ```bash
 git pull origin main
 ```
