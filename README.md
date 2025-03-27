@@ -33,7 +33,7 @@ Esses exercícios **valem até 0,5 ponto na média bimestral** e são corrigidos
 A nota será calculada da seguinte forma:
 
 ```
-Nota = (0,5 / num_de_tarefas) / num_de_tarefas_feitas
+Nota = (0,5 / num_de_tarefas) * num_de_tarefas_feitas
 ```
 
 Os exercícios estarão organizados nas pastas:
