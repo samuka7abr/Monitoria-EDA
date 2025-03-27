@@ -173,7 +173,7 @@ Cada estrutura conta com arquivos `.c` e `.h`, com exemplos prontos para compila
 
 A monitoria será transmitida ao vivo e o suporte será prestado pelo servidor oficial do Discord:
 
-🔗 [https://discord.gg/JTwkRGUsWH](https://discord.gg/JTwkRGUsWH)
+🔗 [discord.gg/d8fkh8vS5b](discord.gg/d8fkh8vS5b)
 
 Lá você poderá:
 - Tirar dúvidas em tempo real

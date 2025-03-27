@@ -62,4 +62,4 @@ mkdir -p Ex1/entregas/seu_nome
 
 Se tiver dúvidas, entre no Discord da monitoria e peça ajuda:
 
-🔗 [https://discord.gg/JTwkRGUsWH](https://discord.gg/JTwkRGUsWH)
+🔗 [discord.gg/d8fkh8vS5b](discord.gg/d8fkh8vS5b)
