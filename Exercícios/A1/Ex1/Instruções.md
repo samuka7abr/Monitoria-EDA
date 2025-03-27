@@ -93,4 +93,12 @@ deslocar(&a, &b);
 ## ✅ Questão 5 – Média com Ponteiro de Retorno
 
 **Enunciado:**  
-Crie uma função chamada `media` que
+Crie uma função chamada `media` que receba dois `float` por valor e **um ponteiro para `float`** chamado `resultado`.  
+A função deve calcular a média aritmética entre os dois valores e armazenar o valor no endereço apontado por `resultado`.
+
+### 🧠 Exemplo:
+```c
+float resultado;
+media(8.5, 7.5, &resultado);
+// resultado esperado: 8.0
+```
