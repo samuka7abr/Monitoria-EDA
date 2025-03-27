@@ -1,7 +1,7 @@
 # Prerequisites
 *.d
 *exec
- 
+*.vscode
 *Gabaritos
 # Object files
 *.o
