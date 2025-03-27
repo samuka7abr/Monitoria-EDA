@@ -2,6 +2,7 @@
 *.d
 *exec
  
+*Gabaritos
 # Object files
 *.o
 *.ko
