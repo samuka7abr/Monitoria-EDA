@@ -4,7 +4,6 @@ void atualizaNotas(float *nota1, float *nota2, float *nota3){
     *nota1 = *nota1 + 1;
     *nota2 = *nota2 + 1;
     *nota3 = *nota3 + 1;
-
 }
 
 int main() {
