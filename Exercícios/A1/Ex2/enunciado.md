@@ -59,7 +59,7 @@ No `main`, chame a função com:
 ## ✅ Questão 5 – Vetor e Ponteiro
 
 **Enunciado:**  
-Crie um vetor de 5 inteiros e uma função `modificar(int *v, int tamanho)` que multiplica cada valor por 2, usando ponteiros.
+    Crie um vetor de 5 inteiros e uma função `modificar(int *v, int tamanho)` que multiplica cada valor por 2, usando ponteiros.
 
 🎯 **Objetivo:** aplicar aritmética de ponteiros com vetores.
 
