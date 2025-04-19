@@ -121,8 +121,8 @@ void calcular_valor_total(Carro *carro) {
 void aprovar_reprovar_carro(Usuario *usuario, Carro *carro) {
     calcular_valor_total(carro);
 
-    if(carro->valor_total < usuario->saldo) {
-        printf("Saldo insuficiente para pagar o estacionamento! Reprovado!");
+    if(carro->valor_total > usuario->saldo) {
+        printf("Saldo insuficiente para pagar o estacionamento!");
 
         carro->aprovado = 0;
 
@@ -165,7 +165,7 @@ void solicitar_nova_entrada(Usuario *usuarios, int num_usuarios) {
     do{
         printf("Digite a placa do carro: ");
         if (fgets(novoCarro.placa, sizeof(novoCarro.placa), stdin) == NULL) {
-            printf("\nPlaca invalido!");
+            printf("\nPlaca invalida!");
 
             limpar_buffer();
 
