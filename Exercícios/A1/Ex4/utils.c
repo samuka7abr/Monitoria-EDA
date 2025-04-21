@@ -46,7 +46,6 @@ Usuario *realocar_memoria_usuario(Usuario *usuarios, int novo_tamanho) {
 }
 
 Carro *realocar_memoria_carro(Carro *carros, int novo_tamanho) {
-    // TODO: implementar com realloc
     return NULL;
 }
 
