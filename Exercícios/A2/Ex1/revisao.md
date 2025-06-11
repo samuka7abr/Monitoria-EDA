@@ -1,4 +1,3 @@
-````markdown
 # Lista de Revisão – Monitoria de Estrutura de Dados
 
 **Questão 1**  
@@ -87,6 +86,3 @@ Aplicando o algoritmo de **Busca em Profundidade (DFS)** a partir de A, visitand
 * [ ] c) A, B, F, E, C, G, D, H
 * [ ] d) A, B, E, F, G, D, C, H
 * [ ] e) A, B, C, D, E, F, G, H
-
-```
-```
