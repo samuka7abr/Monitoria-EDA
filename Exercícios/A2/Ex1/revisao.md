@@ -9,7 +9,6 @@ Elemento *currB = *li;
 Elemento *temp  = currB->prox;
 currB->prox     = currA->prox;
 currA->prox     = temp;
-````
 
 Supondo a lista inicial
 
@@ -48,6 +47,53 @@ free(no_remover);
 
 **Questão 3**
 Analise dois trechos em C que removem um nó com valor `dados` de uma lista **circular** (após o último nó, o ponteiro retorna ao início). Em qual trecho a remoção está correta em todos os casos, sem criar ciclos indesejados?
+
+```c
+// Trecho 1: busca o nó, mantém “último” para reencadear no caso de remoção do primeiro
+void remover1(ListaCircular **li, int dados) {
+    if (!*li) return;
+    ListaCircular *rem = *li, *ant = NULL;
+    // procura o nó com valor “dados”
+    do {
+        if (rem->dado == dados) break;
+        ant = rem;
+        rem = rem->prox;
+    } while (rem != *li);
+    if (rem->dado != dados) return;      // não encontrou
+    // encontra o último para ajustar o ciclo
+    ListaCircular *ultimo = *li;
+    while (ultimo->prox != *li)
+        ultimo = ultimo->prox;
+    // se for o primeiro, avança a cabeça
+    if (rem == *li)
+        *li = rem->prox;
+    // reencadeia anterior e último
+    if (ant)
+        ant->prox = rem->prox;
+    ultimo->prox = *li;
+    free(rem);
+}
+
+// Trecho 2: usa apenas “atual” apontando para o nó anterior ao removido
+void remover2(ListaCircular **li, int dados) {
+    if (!*li) return;
+    ListaCircular *atual = *li;
+    // percorre até achar o nó cujo prox tem o valor
+    do {
+        if (atual->prox->dado == dados) {
+            ListaCircular *rem = atual->prox;
+            atual->prox = rem->prox;
+            // se for o primeiro, atualiza cabeça
+            if (rem == *li)
+                *li = rem->prox;
+            free(rem);
+            return;
+        }
+        atual = atual->prox;
+    } while (atual != *li);
+}
+
+```
 
 * [ ] a) Trecho 1
 * [ ] b) Trecho 2
