@@ -1,23 +1,17 @@
-#define MAX 10
+#ifndef LISTA_SEQ_H
+#define LISTA_SEQ_H
 
-typedef struct aluno{
-	int RA;
-	char nome[50];
-	float n1, n2, n3, n4;
-	float np;
-} Aluno;
-typedef struct lista Lista;
+#define MAX 100
 
-Lista* criaLista();
+typedef struct {
+    int dados[MAX];
+    int size;
+} ListaSeq;
 
-void liberaLista(Lista *li);
-int tamanhoLista(Lista *li);
-int listaCheia(Lista *li);
-int listaVazia(Lista *li);
-void imprimeLista(Lista *li);
-void imprimeElemento(Aluno a);
-int insereListaVazia(Lista *li, Aluno a);
-int insereListaFinal(Lista *li, Aluno a);
-int insereListaInicio(Lista *li, Aluno a);
+void seq_inicializar(ListaSeq* l);
+int seq_inserir(ListaSeq* l, int dado);
+int seq_remover(ListaSeq* l, int pos);
+int seq_obter(ListaSeq* l, int pos);
+int seq_tamanho(ListaSeq* l);
 
-float calcularNota(float n1, float n2, float n3, float n4, float np);
+#endif
