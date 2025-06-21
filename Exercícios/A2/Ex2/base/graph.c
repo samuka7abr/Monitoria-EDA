@@ -129,16 +129,86 @@ static void free_pq(PriorityQueue* pq) {
 }
 
 void dfs_priority(Graph* graph, int start) {
-   //implemente
-   //caso não consiga, entre no arquivo dica.txt e veja o fluxograma
+    bool* visited = calloc(graph->V, sizeof(bool));
+    int* order = malloc(graph->V * sizeof(int));
+    int index = 0;
+
+    dfs_priority_internal(graph, start, visited, order, &index);
+
+    free(visited);
+    free(order);
+    printf("\n");
 }
 
+
 void bfs_priority(Graph* graph, int start) {
-    //implemente
-    //caso não consiga, entre no arquivo dica.txt e veja o fluxograma
+    bool* visited = calloc(graph->V, sizeof(bool));
+    PriorityQueue* pq = create_pq(10, true); 
+
+    pq_push(pq, start, 0);
+
+    while (!pq_empty(pq)) {
+        PQItem item = pq_pop(pq);
+        int u = item.vertex;
+        if (visited[u]) continue;
+
+        visited[u] = true;
+        printf("%d ", u);
+
+        for (AdjNode* adj = graph->adjList[u]; adj != NULL; adj = adj->next) {
+            if (!visited[adj->dest]) {
+                pq_push(pq, adj->dest, adj->weight);
+            }
+        }
+    }
+
+    free_pq(pq);
+    free(visited);
+    printf("\n");
 }
 
 void print_comparison(Graph* graph, int start) {
-    //implemente
-    //caso não consiga, entre no arquivo dica.txt e veja o fluxograma
+    int* dfs_order = malloc(graph->V * sizeof(int));
+    int* bfs_order = malloc(graph->V * sizeof(int));
+    int dfs_index = 0;
+
+    bool* visited = calloc(graph->V, sizeof(bool));
+    dfs_priority_internal(graph, start, visited, dfs_order, &dfs_index);
+    free(visited);
+
+    visited = calloc(graph->V, sizeof(bool));
+    PriorityQueue* pq = create_pq(10, true);
+    int bfs_index = 0;
+    pq_push(pq, start, 0);
+
+    while (!pq_empty(pq)) {
+        PQItem item = pq_pop(pq);
+        int u = item.vertex;
+        if (visited[u]) continue;
+        visited[u] = true;
+        bfs_order[bfs_index++] = u;
+
+        for (AdjNode* adj = graph->adjList[u]; adj != NULL; adj = adj->next) {
+            if (!visited[adj->dest]) {
+                pq_push(pq, adj->dest, adj->weight);
+            }
+        }
+    }
+    free_pq(pq);
+    free(visited);
+
+
+    printf("| Vertice | DFS_indice | BFS_indice |\n");
+    printf("|:-------:|:----------:|:----------:|\n");
+    for (int i = 0; i < graph->V; i++) {
+        int dfs_pos = -1, bfs_pos = -1;
+        for (int j = 0; j < graph->V; j++) {
+            if (dfs_order[j] == i) dfs_pos = j;
+            if (bfs_order[j] == i) bfs_pos = j;
+        }
+        printf("|   %3d   |     %2d     |     %2d     |\n", i, dfs_pos, bfs_pos);
+    }
+
+    free(dfs_order);
+    free(bfs_order);
 }
